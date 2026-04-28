@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
+
+:root {
+    /* VS Code Material Dark inspired palette */
+    --bg-dark: #111218;
+    --bg-card: #272a33;
+    --bg-panel: #2c2c34;
+    --text-main: #d4d4d4;
+    --text-muted: rgba(212, 212, 212, 0.78);
+    --accent-purple: #bb86fc;
+    --accent-blue: #3794ff;
+    --border-color: #3e3e42;
+    --global-font-family: var(--system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+}
+
+html,
+body * {
+    font-family: var(--global-font-family);
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: 'Inter', sans-serif;
+    padding-bottom: 5rem;
+}
+
+.fs-0 {
+  font-size: 2rem !important;
+}
+
+.icon-btn {
+    width: 64px !important;
+    height: 64px !important;
+    text-align: center !important;
+}
+
+.hero-section {
+    background: linear-gradient(180deg, #2d2d30 0%, #1e1e1e 100%);
+    padding: 4rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    color: var(--text-main);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.panel-surface {
+    background-color: var(--bg-panel);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: var(--text-main);
+}
+
+.panel-card-link {
+    display: block;
+    color: inherit;
+}
+
+.panel-card-link .panel-surface {
+    transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.panel-card-link:hover .panel-surface,
+.panel-card-link:focus-visible .panel-surface {
+    transform: translateY(-3px);
+    border-color: var(--accent-blue);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.14);
+}
+
+.text-muted {
+    color: var(--text-muted) !important;
+}
+
+.list-group-item-action:hover,
+.list-group-item-action:focus {
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+.badge-goblin {
+    background-color: var(--accent-purple);
+    color: #000;
+    font-weight: 800;
+}
+
+.text-goblin {
+    color: var(--accent-purple);
+    font-weight: 600;
+}
+
+.section-title {
+    color: var(--accent-blue);
+    border-left: 4px solid var(--accent-blue);
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.list-group-item {
+    background-color: transparent;
+    border-color: var(--border-color);
+    color: var(--text-main);
+}
+
+code {
+    color: #ce9178;
+}
+
+.construction-track {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2.25rem;
+    margin-bottom: 1rem;
+    border: 2px dashed #ffdd00;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: #090909;
+    opacity: 0.78 !important;
+}
+
+.construction-fill {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    opacity: 0.95 !important;
+}
+
+.construction-fill::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(135deg, #000 0 25%, #ffdd00 25% 50%, #000 50% 75%, #ffdd00 75% 100%);
+    background-size: 56.56px 56.56px;
+    animation: construction-scroll 1.2s linear infinite;
+    opacity: 0.95 !important;
+}
+
+.construction-label {
+    position: relative;
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 10rem;
+    color: #111;
+    font-weight: 900;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    text-shadow: 0 0 14px rgba(255, 221, 0, 0.25);
+    background-color: #ffdd00;
+    border-radius: 1rem;
+    line-height: 1.2rem;
+    padding: 0 1rem;
+    border: 1px solid #090909;
+    font-size: 0.85rem;
+    opacity: 1 !important;
+}
+
+.construction-label-text-bg {
+    display: inline-block;
+    opacity: 1 !important;
+}
+
+
+@keyframes construction-scroll {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 56.56px 56.56px;
+    }
+}

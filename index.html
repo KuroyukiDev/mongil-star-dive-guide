@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mongil Star Dive Guide | Dashboard</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="./assets/css/global-styles.css" rel="stylesheet">
+</head>
+<body>
+
+    <header class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Mongil: <span style="color: var(--accent-purple);">Star Dive</span></h1>
+            <p class="lead">Game Guide Dashboard · Access your main menu, guides, and live mission tools.</p>
+        </div>
+    </header>
+
+    <main class="container py-5">
+        <div class="row g-4 mb-4">
+            <div class="col-12">
+                <div class="d-flex flex-column flex-lg-row align-items-stretch gap-4">
+                    <div class="card flex-fill shadow-sm p-4" style="min-height: 240px;">
+                        <h2 class="section-title">Command Center</h2>
+                        <p class="mb-4">Quick access to the most important tools for mission planning, resource tracking, and evolution strategy.</p>
+                        <div class="row text-center gy-3">
+                            <div class="col-sm-4">
+                                <a href="./" class="panel-card-link text-decoration-none" aria-label="Navigate to navigation guide">
+                                    <div class="panel-surface rounded-3 py-3 px-2">
+                                        <div class="fs-3">🧭</div>
+                                        <strong>Navigation</strong>
+                                        <p class="mb-0 small text-goblin">Core walk-throughs</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-4">
+                                <a href="./" class="panel-card-link text-decoration-none" aria-label="Navigate to combat guide">
+                                    <div class="panel-surface rounded-3 py-3 px-2">
+                                        <div class="fs-3">⚔️</div>
+                                        <strong>Combat</strong>
+                                        <p class="mb-0 small text-goblin">Battle tactics</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-4">
+                                <a href="./mutation/cpl-goblin-collection-guide/" class="panel-card-link text-decoration-none" aria-label="Navigate to mutation guide">
+                                    <div class="panel-surface rounded-3 py-3 px-2">
+                                        <div class="fs-3">✨</div>
+                                        <strong>Mutation</strong>
+                                        <p class="mb-0 small text-goblin">Fusion guidance</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="card shadow-sm p-4" style="max-width: 320px;">
+                        <h3 class="section-title">Current Status</h3>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Guide updates: <strong>Latest patch ready</strong></li>
+                            <li class="list-group-item">Daily missions: <strong>3 active</strong></li>
+                            <li class="list-group-item">Resource nodes: <strong>Secure 5/7</strong></li>
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4 mb-4">
+            <div class="col-12">
+                <div class="d-flex flex-column flex-lg-row align-items-stretch gap-4">
+                    <div class="card flex-fill shadow-sm p-4" style="min-height: 140px;">
+                        <h2 class="section-title">Notice: Work in Progress</h2>
+                        <div class="construction-track" role="progressbar" aria-label="Under Construction" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+                            <div class="construction-fill"></div>
+                            <span class="construction-label"><span class="construction-label-text-bg">Under Construction</span></span>
+                        </div>
+                        <p class="mb-3"><b><em>There will be more content added eventually. However, this is only a side project Wolfiechan is working on in her free time. Since this is only a side project, please be patient as Wolfiechan continues to expand the guide when she has time.</em></b></p>
+                        <p class="mb-2">(<em>Wolfiechan does have a day job, and that takes priority for her.</em>)</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="row g-4">
+            <div class="col-lg-8">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <a href="./" class="text-decoration-none">
+                            <div class="card h-100 shadow-sm p-4">
+                                <h4>Overview</h4>
+                                <p class="text-muted">Game goals, event timeline, and core mechanics at a glance.</p>
+                                <span class="badge badge-goblin p-2 rounded">Start here</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#builds" class="text-decoration-none">
+                            <div class="card h-100 shadow-sm p-4">
+                                <h4>Build Planner</h4>
+                                <p class="text-muted">Compare builds, team comps, and skill paths for every role.</p>
+                                <span class="badge badge-goblin p-2 rounded">Optimize</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#resources" class="text-decoration-none">
+                            <div class="card h-100 shadow-sm p-4">
+                                <h4>Resource Map</h4>
+                                <p class="text-muted">Locate the best farming routes for materials and monsters.</p>
+                                <span class="badge badge-goblin p-2 rounded">Track</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="#events" class="text-decoration-none">
+                            <div class="card h-100 shadow-sm p-4">
+                                <h4>Event Calendar</h4>
+                                <p class="text-muted">Stay ahead of limited-time rewards and seasonal content.</p>
+                                <span class="badge badge-goblin p-2 rounded">Follow</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="col-lg-4">
+                <div class="card shadow-sm p-4 mb-4">
+                    <h3 class="section-title">Quick Actions</h3>
+                    <div class="list-group list-group-flush">
+                        <button class="list-group-item list-group-item-action bg-transparent text-start text-light">Open mission checklist</button>
+                        <button class="list-group-item list-group-item-action bg-transparent text-start text-light">View recent strategies</button>
+                        <button class="list-group-item list-group-item-action bg-transparent text-start text-light">Access resource tracker</button>
+                    </div>
+                </div>
+                <div class="card shadow-sm p-4">
+                    <h3 class="section-title">Latest Guide Notes</h3>
+                    <p class="mb-2">Patch 4.2 update: Goblin mutation rates now scale with Mythic rune count.</p>
+                    <p class="small text-muted mb-0">Check the guide section for new farming routes and priority materials.</p>
+                </div>
+            </aside>
+        </div> -->
+
+        <footer class="mt-5 text-center text-muted border-top pt-4">
+            <p>Wolfiechan's Mongil Star Dive Fan-made Wiki</p>
+        </footer>
+    </main>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
